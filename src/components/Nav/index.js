@@ -1,7 +1,9 @@
+import styles from "./Nav.module.css";
+
 function Nav() {
   return (
     <nav>
-      <ul>
+      <ul className={styles.menu}>
         <li>
           <a href="/home">Home</a>
         </li>

@@ -1,0 +1,16 @@
+.header {
+  padding: 20px 0;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .headerContent {
+    flex-direction: row;
+  }
+}
