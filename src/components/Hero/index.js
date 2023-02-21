@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button";
 import Container from "../Container";
 import styles from "./Hero.module.css";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const redirect = () => navigate("/booking");
+
   return (
     <div className={styles.heroContainer}>
       <Container className={styles.heroContent}>
@@ -12,7 +17,7 @@ function Hero() {
           <p className={styles.description}>
             We are a family owned Mediterranean restaurant, focused on tradional recipes served with a modern twist.
           </p>
-          <Button>Reserve a Table</Button>
+          <Button onClick={redirect}>Reserve a Table</Button>
         </div>
         <div className={styles.heroItem}>
           <img src="/images/restauranfood.jpg" alt="person serving food" className={styles.img} />

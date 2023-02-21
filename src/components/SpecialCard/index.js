@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./SpecialCard.module.css";
 
 function SpecialCard({ title, price, image, description }) {
@@ -9,10 +10,10 @@ function SpecialCard({ title, price, image, description }) {
           {title} <span>{price}</span>
         </h2>
         <p className={styles.description}>{description}</p>
-        <a href="/" className={styles.link}>
+        <Link to="/order-online" className={styles.link}>
           Order a delivery
           <img src="/images/delivery.svg" alt="delivery icon" className={styles.icon} />
-        </a>
+        </Link>
       </div>
     </div>
   );

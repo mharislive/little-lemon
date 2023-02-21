@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button";
 import Container from "../Container";
 import SpecialCard from "../SpecialCard";
@@ -28,12 +29,16 @@ const specials = [
 ];
 
 function Specials() {
+  const navigate = useNavigate();
+
+  const redirect = () => navigate("/order-online");
+
   return (
     <div className={styles.specialsContainer}>
       <Container>
         <div className={styles.header}>
           <h2>This weeks specials!</h2>
-          <Button>Online Menu</Button>
+          <Button onClick={redirect}>Online Menu</Button>
         </div>
         <div className={styles.cardContainer}>
           {specials.map(({ title, price, image, description }, index) => (

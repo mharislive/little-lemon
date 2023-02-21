@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
 
 function Nav() {
@@ -5,22 +6,22 @@ function Nav() {
     <nav>
       <ul className={styles.menu}>
         <li>
-          <a href="/home">Home</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <a href="/about">About</a>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <a href="/menu">Menu</a>
+          <NavLink to="/menu">Menu</NavLink>
         </li>
         <li>
-          <a href="/reservations">Reservations</a>
+          <NavLink to="/booking">Reservations</NavLink>
         </li>
         <li>
-          <a href="/order-online">Order Online</a>
+          <NavLink to="/order-online">Order Online</NavLink>
         </li>
         <li>
-          <a href="/login">Login</a>
+          <NavLink to="/login">Login</NavLink>
         </li>
       </ul>
     </nav>

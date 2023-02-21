@@ -1,13 +1,5 @@
-import Hero from "../Hero";
-import Specials from "../Specials";
-
-function Main() {
-  return (
-    <main>
-      <Hero />
-      <Specials />
-    </main>
-  );
+function Main({ children }) {
+  return <main>{children}</main>;
 }
 
 export default Main;

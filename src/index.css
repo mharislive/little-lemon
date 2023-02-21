@@ -54,3 +54,35 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+p {
+  margin-bottom: 2.4rem;
+}
+
+label {
+  display: block;
+  font-family: "Markazi Text", serif;
+  font-weight: 700;
+}
+
+.form {
+  margin-bottom: 2.4rem;
+  max-width: 30rem;
+}
+
+.form-group {
+  margin-bottom: 2.4rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  border: 1px solid #333;
+  width: 100%;
+  padding: 1.2rem;
+}
+
+.error {
+  color: red;
+}
